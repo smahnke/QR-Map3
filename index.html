@@ -46,13 +46,13 @@
      
     var TramBar = L.popup()
       .setLatLng([42.734447, -84.545577])
-      .setContent("<p><h4>Trammps Bar (1976 - 90's)</h4><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/trammps.jpg'/><br /><h3>Emergence:</h3>The first gay owned club in Lansing, Trammps was the Studio 54 of the gay scene, often competing with Joe Covello's next door.<br /><h3>Departure:</h3>demolished in the 90s after the city bought the block of businesses for a new baseball stadium.</p>")
+      .setContent("<p><h1>Trammps Bar (1976 - 90's)</h1><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/trammps.jpg'/><br /><h3>Emergence:</h3>The first gay owned club in Lansing, Trammps was the Studio 54 of the gay scene, often competing with Joe Covello's next door.<br /><h3>Departure:</h3>demolished in the 90s after the city bought the block of businesses for a new baseball stadium.</p>")
   
     var Trammps = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup(TramBar).addTo(map);
     
     var VelFin = L.popup()
         .setLatLng([42.733786, -84.544727])
-        .setContent("<p><h4>Velvet Fingers</h4><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/Velvet.png'/></p>")
+        .setContent("<p><h1>Velvet Fingers</h1><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/Velvet.png'/><h3>Emergence:</h3><br /><h3>Departure:</h3></p>")
       
     var Velvet = L.marker([42.733786, -84.544727], {icon: QueerIcon}).bindPopup(VelFin).addTo(map);
       
@@ -76,7 +76,7 @@
       
     var CovBar = L.popup()
         .setLatLng([42.733772, -84.546152])
-        .setContent("<p><h4>Joe Covello's (70's-?)</h4><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/Covellos1986.jpg'/></p>")
+        .setContent("<p><h1>Joe Covello's (70's - 90's)</h1><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/Covellos1986.jpg'/><h3>Emergence:</h3>Bar owner Joe Covello tested out Lansing's gay waters to fill a niche, and soon the bar attracted a loyal crowd of LGBTQ patrons who were often older and blue-collar compared to Trammps' (next door) younger LGBTQ crowd.<br /><h3>Departure:</h3>Demolished in the 90's after the city bought the 500 block to make a new baseball stadium.</p>")
     
     var Covellos = L.marker([42.733772, -84.546152], {icon: QueerIcon}).bindPopup(CovBar).addTo(map);
       
