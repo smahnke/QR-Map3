@@ -62,6 +62,18 @@
   
     var Stobers = L.marker([42.733511, -84.540400], {icon: QueerIcon}).bindPopup(StoBar).addTo(map);
     
+    var ChroCat = L.popup()
+        .setLatLng([42.747339, -84.549072])
+        .setContent("<p><h4>Chrome Cat (2009-2013)</h4><br /><img src='https://c1.staticflickr.com/9/8011/7486631318_36393be522_b.jpg'/></p>")
+    
+    var Chrome = L.marker([42.747339, -84.549072], {icon: QueerIcon}).bindPopup(ChroCat).addTo(map);
+      
+    var OlsBar = L.popup()
+        .setLatLng([42.736902, -84.552214])
+        .setContent("<p><h4>Olsen's Bar (mid-50's - 1960)</h4><br /><img src='http://static.wehaacdn.com/lansingcitypulse-com/images/147200414557bd0031d87dc.11052.widea.0.jpg'/></p>")
+    
+    var Olsens = L.marker([42.736902, -84.552214], {icon:QueerIcon}).bindPopup(OlsBar).addTo(map);
+      
     </script>
 
     <div class="wrapper">
