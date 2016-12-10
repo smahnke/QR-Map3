@@ -43,10 +43,14 @@
         iconSize: [38, 65], // size of the icon
         popupAnchor: [0,-15]
         });
+     
+    var TramBar = L.popup()
+      .setLatLng([42.734447, -84.545577])
+      .setContent("I am a standalone popup.")
   
-    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup("Trammps Bar").addTo(map);
+    var Trammps = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup(TramBar).addTo(map);
     
-    var marker = L.marker([42.733786, -84.544727], {icon: QueerIcon}).addTo(map);
+    var Velvet = L.marker([42.733786, -84.544727], {icon: QueerIcon}).addTo(map);
 
     </script>
 
