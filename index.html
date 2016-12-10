@@ -9,6 +9,13 @@
       #map {
         width: 1100px;
         height: 500px;
+      }  
+    .custom .leaflet-popup-tip,
+    .custom .leaflet-popup-content-wrapper {
+    background: #e93434;
+    color: #ffffff;
+}
+
       }
     </style>
     
@@ -41,9 +48,19 @@
     var QueerIcon = L.icon({
         iconUrl: 'https://www.thecenterproject.org/wp-content/uploads/2016/07/Rainbow-Map-Marker-180x270.png',
         iconSize: [38, 65], // size of the icon
+        popupAnchor: [0,-15]
         });
+     
+    var customPopup = "Trammps Bar<br/>
+    <img src='Trammps.jpg' alt='Trammps jpeg' width='350px'/>";
 
-    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup('Trammps Bar').addTo(map);
+    var customOptions =
+        {
+        'maxWidth': '500',
+        'className' : 'custom'
+        }
+
+    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup(customPopup,customOptions).addTo(map);
     
     var marker = L.marker([42.733786, -84.544727], {icon: QueerIcon}).addTo(map);
 
