@@ -37,6 +37,14 @@
     attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 
     }).addTo(map);
+      
+    var QueerIcon = L.icon({
+        iconUrl: 'https://www.thecenterproject.org/wp-content/uploads/2016/07/Rainbow-Map-Marker-180x270.png',
+        iconSize: [38, 95], // size of the icon
+        });
+
+    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).addTo(map);
+
 
     </script>
 
