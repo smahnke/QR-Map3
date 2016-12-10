@@ -78,7 +78,13 @@
         .setLatLng([42.733772, -84.546152])
         .setContent("<p><h4>Joe Covello's (70's-?)</h4><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/Covellos1986.jpg'/></p>")
     
-    var Covellos = L.marker([42.733772, -84.546152], {icon: QueerIcon}).bindPopup(CovBar).addTo(map);   
+    var Covellos = L.marker([42.733772, -84.546152], {icon: QueerIcon}).bindPopup(CovBar).addTo(map);
+      
+    var xcel = L.popup()
+        .setLatLng([42.731586, -84.552669]) 
+        .setContent("<p><h4>Club Excel (2002 - ?)</h4><br /><img src='http://www.lansing-bars.com/xcel-nightclub.jpg'/></p>")
+    
+    var Excel = L.marker([42.731586, -84.552669], {icon: QueerIcon}).bindPopup(xcel).addTo(map);
       
     </script>
 
