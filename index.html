@@ -55,7 +55,13 @@
         .setContent("<p><h4>Velvet Fingers</h4><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/Velvet.png'/></p>")
       
     var Velvet = L.marker([42.733786, -84.544727], {icon: QueerIcon}).bindPopup(VelFin).addTo(map);
-
+      
+    var StoBar = L.popup()
+        .setLatLng([42.733511, -84.540400])
+        .setContent("<p><h4>Stober's Bar</h4><br /><img src='http://static.wehaacdn.com/lansingcitypulse-com/images/147200419657bd00647a4b8.11053.t1.0.jpg'/></p>")
+  
+    var Stobers = L.marker([42.733511, -84.540400], {icon: QueerIcon}).bindPopup(StoBar).addTo(map);
+    
     </script>
 
     <div class="wrapper">
