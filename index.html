@@ -10,11 +10,7 @@
         width: 1100px;
         height: 500px;
       }  
-      .custom .leaflet-popup-tip,
-      .custom .leaflet-popup-content-wrapper {
-      background: #e93434;
-      color: #ffffff;
-      }
+     
     </style>
     
     <!--Leaflet Quick Start Code-->
@@ -48,16 +44,8 @@
         iconSize: [38, 65], // size of the icon
         popupAnchor: [0,-15]
         });
-    var customPopup = "Trammps Bar"<img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='350px'/>;
-
-    var customOptions =
-        {
-        'maxWidth': '500',
-        'className' : 'custom'
-        }
-
-     
-    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup(customPopup,customOptions).addTo(map);
+  
+    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup('Trammps Bar').addTo(map);
     
     var marker = L.marker([42.733786, -84.544727], {icon: QueerIcon}).addTo(map);
 
