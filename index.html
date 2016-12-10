@@ -29,8 +29,8 @@
     <script>
 
     var map = L.map('map',{
-    center: [42.7325, -84.5555],
-    zoom: 30
+    center: [42.734447, -84.545577],
+    zoom: 20
     });
 
     L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}', {
@@ -44,7 +44,8 @@
         });
 
     var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).addTo(map);
-
+    
+    var marker = L.marker([42.733786, -84.544727], {icon: QueerIcon}).addTo(map);
 
     </script>
 
