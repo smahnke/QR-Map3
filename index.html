@@ -74,6 +74,12 @@
     
     var Olsens = L.marker([42.736902, -84.552214], {icon:QueerIcon}).bindPopup(OlsBar).addTo(map);
       
+    var CovBar = L.popup()
+        .setLatLng([42.733772, -84.546152])
+        .setContent("<p><h4>Joe Covello's (70's-?)</h4><br /><img src='https://raw.githubusercontent.com/smahnke/QR-Map3/gh-pages/Covellos1986.jpg'/></p>")
+    
+    var Covellos = L.marker([42.733772, -84.546152], {icon: QueerIcon}).bindPopup(CovBar).addTo(map);   
+      
     </script>
 
     <div class="wrapper">
