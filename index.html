@@ -30,7 +30,7 @@
 
     var map = L.map('map',{
     center: [42.734447, -84.545577],
-    zoom: 25
+    zoom: 15
     });
 
     L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}', {
@@ -46,7 +46,7 @@
      
     var TramBar = L.popup()
       .setLatLng([42.734447, -84.545577])
-      .setContent("I am a standalone popup.")
+      .setContent('<p><h4>Trammps Bar</hr></p>')
   
     var Trammps = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup(TramBar).addTo(map);
     
