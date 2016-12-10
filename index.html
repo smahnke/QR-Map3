@@ -10,11 +10,6 @@
         width: 1100px;
         height: 500px;
       }  
-    .custom .leaflet-popup-tip,
-    .custom .leaflet-popup-content-wrapper {
-    background: #e93434;
-    color: #ffffff;
-}
 
       }
     </style>
@@ -51,16 +46,7 @@
         popupAnchor: [0,-15]
         });
      
-    var customPopup = "Trammps Bar<br/>
-    <img src='http://www.gannett-cdn.com/-mm-/5b6b75635997e5937ff735d4d72e666bb1d04b50/c=102-0-1697-1199&r=x513&c=680x510/local/-/media/2015/09/01/MIGroup/Lansing/635767170267381104-E-MICHIGAN-AVENUE286.jpg' alt='Trammps jpeg' width='350px'/>";
-   
-    var customOptions =
-        {
-        'maxWidth': '500',
-        'className' : 'custom'
-        }
-
-    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup(customPopup,customOptions).addTo(map);
+    var marker = L.marker([42.734447, -84.545577], {icon: QueerIcon}).bindPopup('Trammps Bar').addTo(map);
     
     var marker = L.marker([42.733786, -84.544727], {icon: QueerIcon}).addTo(map);
 
